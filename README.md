@@ -12,7 +12,5 @@ Meta-data:
 Goal:
 Ideally, this is a header-only library with associated CMake scripts. It should be simple to incorporate these files directly into your build system with as little modification as possible.
 
-The
-
 Acknowledgements:
 My ideas here are based on stuff I've seen in the build system for [log4cplus](https://sourceforge.net/projects/log4cplus/). So, thanks to them for the idea!
