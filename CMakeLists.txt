@@ -19,7 +19,8 @@ message("-- Generating build for cppmanifest version ${VERSION}")
 
 # Write the username to build_info.h
 set(USERNAME $ENV{USERNAME})
-file(APPEND ${PROJECT_SOURCE_DIR}/include/build_info.h "#define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_USERNAME_STR(${USERNAME})\n#endif\n")
+configure_file(${PROJECT_SOURCE_DIR}/include/build_info.h.template ${PROJECT_SOURCE_DIR}/include/build_info.h)
+# file(APPEND ${PROJECT_SOURCE_DIR}/include/build_info.h "#define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_USERNAME_STR(${USERNAME})\n#endif\n")
 
 # build test application
 include_directories(${PROJECT_SOURCE_DIR})
