@@ -23,6 +23,12 @@
 #include "version.h"
 #include "build_info.h"
 
+namespace cppmanifest {
+    static std::string getUserName() {
+        return CPPMANIFEST_USERNAME_STR;
+    }
+}
+
 #endif
 /*
  * Do not put content below here.

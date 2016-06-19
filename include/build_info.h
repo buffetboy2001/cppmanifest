@@ -24,12 +24,8 @@
 #username
 
 //! This is CPPMANIFEST user name as a string.
-#define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_USERNAME_STR(sbowman) /* FIXME replace with cmake write operation */
+// #define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_USERNAME_STR(sbowman) /* FIXME replace with cmake write operation */
 
-namespace cppmanifest {
-    static std::string getUserName() {
-        return CPPMANIFEST_USERNAME_STR;
-    }
-}
-#endif
-
+/*
+ * Do not put content below here. Auto-generated content will go here.
+ */
