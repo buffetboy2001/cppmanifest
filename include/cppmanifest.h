@@ -24,8 +24,19 @@
 #include "build_info.h"
 
 namespace cppmanifest {
+
     static std::string getUserName() {
         return CPPMANIFEST_USERNAME_STR;
+    }
+
+    static std::string getVersion() {
+        std::string verStr(CPPMANIFEST_VERSION_STR);
+        bool stripLastChar = verStr.find("-") == verStr.length()-1;
+        if (stripLastChar) {
+            // dump the last char
+            verStr.resize(verStr.find("-"));
+        }
+        return verStr;
     }
 }
 

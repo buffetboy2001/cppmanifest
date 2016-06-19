@@ -43,15 +43,4 @@
 //! Do not wrap the suffix in quotes, but it may be left empty for a release
 #define CPPMANIFEST_VERSION_STR CPPMANIFEST_MAKE_VERSION_STR(1, 0, 0, alpha)
 
-namespace cppmanifest {
-    static std::string getVersion() {
-        std::string verStr(CPPMANIFEST_VERSION_STR);
-        bool stripLastChar = verStr.find("-") == verStr.length()-1;
-        if (stripLastChar) {
-            // dump the last char
-            verStr.resize(verStr.find("-"));
-        }
-        return verStr;
-    }
-}
 #endif
