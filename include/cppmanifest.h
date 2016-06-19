@@ -37,6 +37,18 @@ namespace cppmanifest {
         return CPPMANIFEST_BUILDGCCVERSION_STR;
     }
 
+    static std::string getBuildSystemVersion() {
+        return CPPMANIFEST_BUILDSYSTEMVERSION_STR;
+    }
+
+    static std::string getBuildSystemName() {
+        return CPPMANIFEST_BUILDSYSTEMNAME_STR;
+    }
+
+    static std::string getBuildSystemProcessor() {
+        return CPPMANIFEST_BUILDSYSTEMPROCESSOR_STR;
+    }
+
     static std::string getVersion() {
         std::string verStr(CPPMANIFEST_VERSION_STR);
         bool stripLastChar = verStr.find("-") == verStr.length()-1;
