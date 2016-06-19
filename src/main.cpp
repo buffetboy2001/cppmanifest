@@ -7,7 +7,7 @@ using namespace std;
 
 int main(int argc, char* argv[]) {
     cout << "Starting logging" << endl;
-    cout << "My own version: " << cppmanifest::getVersion() << endl;
+    cout << "Build version: " << cppmanifest::getVersion() << endl;
     cout << "Created-by: " << cppmanifest::getUserName() << endl;
 
 }
