@@ -10,5 +10,6 @@ int main(int argc, char* argv[]) {
     cout << "Build version: " << cppmanifest::getVersion() << endl;
     cout << "Created-by: " << cppmanifest::getUserName() << endl;
     cout << "Created-on: " << cppmanifest::getBuildTimeStamp() << endl;
+    cout << "Built with: " << cppmanifest::getBuildCompilerVersion() << endl;
 
 }

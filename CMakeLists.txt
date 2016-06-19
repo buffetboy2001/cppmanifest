@@ -3,7 +3,7 @@ cmake_minimum_required(VERSION 3.0)
 project(cppmanifest)
 enable_language(CXX)
 
-# inject version based on include/version.h
+# report version based on include/version.h
 include (.cmake/VersionUtils.cmake)
 get_version ("${PROJECT_SOURCE_DIR}/include"
         cppmanifest_version_major cppmanifest_version_minor cppmanifest_version_patch cppmanifest_version_suffix)
