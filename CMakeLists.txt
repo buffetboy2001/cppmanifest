@@ -17,3 +17,6 @@ else()
 endif()
 message("-- Generating build for cppmanifest version ${VERSION}")
 
+# build test application
+include_directories(${PROJECT_SOURCE_DIR})
+add_executable(cpptestapp src/main.cpp)
