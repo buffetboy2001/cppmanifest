@@ -4,9 +4,9 @@ An exploration of a cmake-integrated manifest for C++ projects. The goal is to a
 Meta-data: 
 * build version: DONE
 * created-by: DONE
-* build machine
+* build machine name
 * build date, time: DONE
-* build architecture
+* build architecture: DONE
 * gcc/c++ compiler version: DONE
 
 Goal:
