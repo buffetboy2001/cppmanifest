@@ -9,5 +9,6 @@ int main(int argc, char* argv[]) {
     cout << "Starting logging" << endl;
     cout << "Build version: " << cppmanifest::getVersion() << endl;
     cout << "Created-by: " << cppmanifest::getUserName() << endl;
+    cout << "Created-on: " << cppmanifest::getBuildTimeStamp() << endl;
 
 }

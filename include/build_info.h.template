@@ -20,13 +20,13 @@
 #include <iostream>
 #include <string>
 
-#define CPPMANIFEST_MAKE_USERNAME_STR(username) \
-#username
+#define CPPMANIFEST_MAKE_STR(input) \
+#input
 
 //! This is CPPMANIFEST user name as a string.
-#define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_USERNAME_STR(${USERNAME})
+#define CPPMANIFEST_USERNAME_STR CPPMANIFEST_MAKE_STR(${USERNAME})
+
+//! This is the build timestamp
+#define CPPMANIFEST_BUILDTIMESTAMP_STR CPPMANIFEST_MAKE_STR(${BUILDDATETIME})
 #endif
 
-/*
- * Do not put content below here. Auto-generated content will go here.
- */

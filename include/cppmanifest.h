@@ -29,6 +29,10 @@ namespace cppmanifest {
         return CPPMANIFEST_USERNAME_STR;
     }
 
+    static std::string getBuildTimeStamp() {
+        return CPPMANIFEST_BUILDTIMESTAMP_STR;
+    }
+
     static std::string getVersion() {
         std::string verStr(CPPMANIFEST_VERSION_STR);
         bool stripLastChar = verStr.find("-") == verStr.length()-1;
