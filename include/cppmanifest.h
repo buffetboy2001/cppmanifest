@@ -49,6 +49,10 @@ namespace cppmanifest {
         return CPPMANIFEST_BUILDSYSTEMPROCESSOR_STR;
     }
 
+    static std::string getBuildHostName() {
+        return CPPMANIFEST_BUILDHOSTNAME_STR;
+    }
+
     static std::string getVersion() {
         std::string verStr(CPPMANIFEST_VERSION_STR);
         bool stripLastChar = verStr.find("-") == verStr.length()-1;

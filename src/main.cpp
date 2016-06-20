@@ -14,5 +14,6 @@ int main(int argc, char* argv[]) {
     cout << "Built on system name: " << cppmanifest::getBuildSystemName() << endl;
     cout << "Built on system processor: " << cppmanifest::getBuildSystemProcessor() << endl;
     cout << "Built with system ver: " << cppmanifest::getBuildSystemVersion() << endl;
+    cout << "Built with system ver: " << cppmanifest::getBuildHostName() << endl;
 
 }
