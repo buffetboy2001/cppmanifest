@@ -1,5 +1,5 @@
 # cppmanifest
-An exploration of a cmake-integrated manifest for C++ projects. The goal is to allow [CMake](https://www.cmake.org) to inject build meta-date into a C++ project. The build information should then queryable from within the compiled application (e.g. via CLI) and should provide build traceability. This metadata is particularly useful in environments that employ automated build pipelines (continuous integration & delivery).
+An exploration of a cmake-integrated manifest for C++ projects. The goal is to allow [CMake](https://www.cmake.org) to inject build meta-data into a C++ project. The build information should then queryable from within the compiled application (e.g. via CLI) and should provide build traceability. This metadata is particularly useful in environments that employ automated build pipelines (continuous integration & delivery).
 
 _Meta-data:_ 
 * build version: DONE
