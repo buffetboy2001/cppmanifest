@@ -15,5 +15,10 @@ int main(int argc, char* argv[]) {
     cout << "Built on system processor: " << cppmanifest::getBuildSystemProcessor() << endl;
     cout << "Built with system ver: " << cppmanifest::getBuildSystemVersion() << endl;
     cout << "Built with system ver: " << cppmanifest::getBuildHostName() << endl;
+    cout << "Built from git branch: " << cppmanifest::getGitBranch() << endl;
+    if (cppmanifest::getGitIsClean())
+        cout << "Built from git hash: " << cppmanifest::getGitHash() << endl;
+    else
+        cout << "Built from git hash: " << cppmanifest::getGitHash() << "-DIRTY" << endl;
 
 }

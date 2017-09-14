@@ -53,6 +53,21 @@ namespace cppmanifest {
         return CPPMANIFEST_BUILDHOSTNAME_STR;
     }
 
+    static std::string getGitBranch() {
+        return CPPMANIFEST_GIT_BRANCH;
+    }
+
+    static std::string getGitHash() {
+        return CPPMANIFEST_GIT_HASH;
+    }
+
+    static bool getGitIsClean() {
+        if (CPPMANIFEST_GIT_LOCAL_CHANGES == "CLEAN")
+            return 1;
+        else
+            return 0;
+    }
+
     static std::string getVersion() {
         std::string verStr(CPPMANIFEST_VERSION_STR);
         bool stripLastChar = verStr.find("-") == verStr.length()-1;

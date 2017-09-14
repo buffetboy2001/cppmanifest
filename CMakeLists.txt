@@ -17,6 +17,19 @@ else()
 endif()
 message("-- Generating build for cppmanifest version ${VERSION}")
 
+# Gather git info
+find_package(Git)
+if(GIT_FOUND)
+  message("Git found: ${GIT_EXECUTABLE}")
+  include (.cmake/GetGitRevisionDescription.cmake)
+
+  get_git_head_revision(GIT_BRANCH GIT_HASH)
+  git_local_changes(GIT_LOCAL_CHANGES)
+  message("Git branch: ${GIT_BRANCH}")
+  message("Git hash: ${GIT_HASH}")
+  message("Git local changes: ${GIT_LOCAL_CHANGES}")
+endif()
+
 # Write the build_info
 set(USERNAME $ENV{USERNAME})
 set(HOSTNAME $ENV{HOSTNAME})
